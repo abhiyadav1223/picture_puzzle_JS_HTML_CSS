@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sliding Puzzle Game</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="bg"></div>
+
+  <div class="star-field">
+    <div class="layer"></div>
+    <div class="layer"></div>
+    <div class="layer"></div>
+    <div class="cover-screen">
+      <p id="result"></p>
+      <input type="text" id="input" placeholder="Enter Your Name ">
+      <button id="start-button">Start Game</button>
+    </div>
+    <div class="con">
+      <!-- <div id="moves"class="imgLogo"><img src="./INfoLOgo.png" alt=""></div> -->
+    </div>
+    <div id="movesH">
+      <h3 id="logo"><img id="logoInfo" src="logo.jpg
+        " alt=""></h3>
+      <h1 id="head">Picture Puzzle</h1>
+      <h3 id="UserName">User Name</h3>
+    </div>
+    <div id="overlay"></div>
+    <div id="popup-container">
+      <h2 id="line1"></h2>
+      <p class="popLine" id="line2"></p>
+      <button id="popBtn"> Restart </button>
+    </div>
+    <div id="midLine">
+      <marquee  direction="" scrollamount=10>
+        <h3> Drag and drop with closure one ! </h3>
+      </marquee>
+    </div>
+    <div class="slider-game" id="mainDiv">
+      <div class="container"></div>
+      <div>
+        <h3 id="moves">Moves left : ...</h3>
+      </div>
+      <div class="original-image">
+        <img src="" alt="" id="mainImg" />
+      </div>
+    </div>
+    <!-- <div id="footer">
+        <h1>Swap with the Closer One</h1>
+      </div> -->
+    <!-- Script -->
+    <audio id="winAudio">
+      <source src="./mixkit-achievement-bell-600.wav" type="audio/mp3">
+    </audio>
+    <audio id="failAudio">
+      <source src="./mixkit-short-buzzer-sound-2963.wav" type="audio/mp3">
+    </audio>
+    <script src="script3.js"></script>
+</body>
+
+</html>
